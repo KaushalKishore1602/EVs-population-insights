@@ -28,6 +28,6 @@ The dataset used contains details about electric vehicles, including:
 - Electric Range
 - City & ZIP Code of registration
 
-> **Note:** Dataset is assumed to be sourced from a public/open government or automotive dataset repository.
+
 
 
