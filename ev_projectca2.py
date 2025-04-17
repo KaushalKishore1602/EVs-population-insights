@@ -16,15 +16,11 @@ print(df.tail(10))
 print("Actual column names:")
 print(df.columns.tolist())
 
-print("Missing values:\n", df.isnull().sum())
-
 cleaned_df = df.dropna(subset=['Make', 'Model Year', 'Electric Range', 'Electric Vehicle Type', 'City', 'County'], inplace=True)
 print(cleaned_df)
 
-
 #Check for missing values
 print("Missing values:\n", df.isnull().sum())
-
 
 #Convert relevant columns to appropriate datatypes
 df['Model Year'] = pd.to_numeric(df['Model Year'], errors='coerce')
